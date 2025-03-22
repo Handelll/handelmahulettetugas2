@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -25,9 +27,9 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/NBA"
+                android:layout_marginBottom="10dp"
                 android:contentDescription="Logo"
-                android:layout_marginBottom="10dp"/>
+                android:src="@drawable/nba" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -83,7 +85,7 @@
                 android:id="@+id/confirm_password_register"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="Password"
+                android:hint="Konfirmasi Password"
                 android:background="@drawable/edittext_border"
                 android:padding="10dp"
                 android:inputType="textPassword"
@@ -105,8 +107,7 @@
                 android:textSize="14sp"
                 android:textColor="@color/blue"
                 android:textStyle="bold"
-                android:layout_marginBottom="20dp"
-                android:onClick="goToLogin"/>
+                android:layout_marginBottom="20dp"/>
 
             <Button
                 android:id="@+id/btn_register"
@@ -118,4 +119,5 @@
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>
